@@ -216,7 +216,56 @@ html[lang=km] .gsw{letter-spacing:0;text-transform:none;font-size:13px}
 #lb .x{top:max(8px,env(safe-area-inset-top,0px));right:8px;font-size:28px;background:#0009;border-radius:50%;width:48px;height:48px;min-width:0;min-height:0;padding:0;border:1px solid #ffffff55}
 #lb .p,#lb .n{top:50%;translate:0 -50%;font-size:38px}
 #lb img{touch-action:pinch-zoom}
+
+/* ===== guest wishes ===== */
+.wish{max-width:520px;margin:0 auto}
+.wish .sub{font-size:clamp(13px,3.5vw,15px);color:#e9dcc0;margin-bottom:1.2em}
+.wf{display:grid;gap:10px;text-align:left}
+.wf label{font-size:12px;color:#e7c97a;display:block;margin-bottom:4px}
+.wf input,.wf textarea{width:100%;font:inherit;font-size:16px;line-height:1.7;color:#f3f1ec;background:#0b285099;border:1px solid #d9b15a99;border-radius:14px;padding:11px 14px;outline:0;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:border-color .2s,box-shadow .2s}
+.wf textarea{min-height:110px;resize:vertical}
+.wf input::placeholder,.wf textarea::placeholder{color:#cdbf9b99}
+.wf input:focus,.wf textarea:focus{border-color:#fff3cf;box-shadow:0 0 0 3px #e7c97a33}
+.wf .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.wf .cnt{font-size:11px;color:#cdbf9b}
+.wf .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.wf .btn{margin:4px 0 0;justify-self:center;min-width:200px}
+.wf .btn[disabled]{opacity:.55;cursor:default}
+.wmsg{min-height:1.6em;font-size:13px;color:#e7c97a;margin-top:6px}
+.wmsg.err{color:#ffb4a8}
+.wlist{display:grid;gap:12px;margin-top:1.6em;text-align:left}
+.wi{background:#0b285080;border:1px solid #e7c97a55;border-radius:16px;padding:14px 16px;box-shadow:0 10px 24px #0005;animation:wIn .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes wIn{from{opacity:0;transform:translateY(14px)}}
+.wi .wn{font-family:Moul,serif;font-size:13px;margin-bottom:2px}
+.wi .wt{font-size:14.5px;line-height:1.8;color:#f3f1ec;white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
+.wi .wd{font-size:11px;color:#cdbf9b;margin-top:4px}
+.wempty{font-size:13px;color:#cdbf9b;padding:1em 0}
+.wmore{margin-top:14px}.wmore[hidden]{display:none}
+html[lang=en] .wi .wn{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:17px}
+@media(prefers-reduced-motion:reduce){.wi{animation:none}}
+
+/* ===== letters ===== */
+.lt-tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:1.2em 0 1em}
+.lt-tabs button{font:600 14px/1.6 inherit;font-family:inherit;padding:10px 18px;border-radius:999px;border:1px solid #b88a2e;background:none;color:#0b2850;cursor:pointer;transition:background .2s}
+.lt-tabs button[aria-selected=true]{background:var(--foil);border-color:transparent}
+.lt{display:none;text-align:left;background:#fffdf7;border:1px solid #d9b15a;border-radius:6px;padding:clamp(18px,5vw,30px);box-shadow:0 14px 34px #0b285033,inset 0 0 0 5px #fffdf7,inset 0 0 0 6px #d9b15a66;color:#1b2436}
+.lt.on{display:block}
+.lt h3{font-family:Moul,serif;font-weight:400;font-size:clamp(15px,4.2vw,19px);color:#0b2850;text-align:center;margin-bottom:.6em;line-height:1.9}
+.lt p{font-size:clamp(13.5px,3.6vw,15.5px);line-height:2;margin:.7em 0;text-align:justify}
+.lt .to{font-weight:600}
+.lt .sg{margin-top:1.4em;text-align:right;line-height:1.9}
+html[lang=en] .lt h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(20px,5.4vw,25px)}
+html[lang=en] .lt p{line-height:1.6;text-align:left}
+html[lang=en] .lt .sg{line-height:1.5}
+
+/* gold icons on the programme rows (original layout kept) */
+html .pg .r.m{grid-template-columns:42px minmax(150px,40%) 1fr;gap:10px;align-items:start}
+html[lang=en] .pg .r.m{grid-template-columns:42px minmax(80px,25%) 1fr}
+.pg .r.m .ic{width:38px;height:38px;margin-top:.05em;display:block}
+.pg .r.m .ic svg{width:100%;height:100%;display:block;overflow:visible;filter:drop-shadow(0 1px 1px #7a551633)}
+@media(max-width:480px){html .pg .r.m{grid-template-columns:38px 112px 1fr;gap:6px}html[lang=en] .pg .r.m{grid-template-columns:38px 72px 1fr}html .pg .r.m b{font-size:12.5px;white-space:normal;line-height:1.7}.pg .r.m b::after{content:none}}
 </style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="gld" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a5212"/><stop offset=".4" stop-color="#c8962f"/><stop offset=".58" stop-color="#e3bd5c"/><stop offset=".82" stop-color="#a97a22"/><stop offset="1" stop-color="#744d0f"/></linearGradient></defs></svg>
 
 <div id="skybg" aria-hidden="true"></div>
 <div id="lang" role="group" aria-label="Language"><button type="button" data-l="km" class="on">ខ្មែរ</button><button type="button" data-l="en">EN</button></div>
@@ -283,25 +332,25 @@ html[lang=km] .gsw{letter-spacing:0;text-transform:none;font-size:13px}
 <section class="sec l"><div class="in"><h2 class="kh" style="color:#0b2850" data-en="Wedding Programme">កម្មវិធីសិរីមង្គលអាពាហ៍ពិពាហ៍</h2>
 <div class="pg kh">
 <h3 data-en="Programme 1 · Saturday, 22 May 2027">កម្មវិធីទី១ ថ្ងៃសៅរ៍ ទី២២ ខែឧសភា ឆ្នាំ២០២៧</h3>
-<div class="r"><b data-en="3:00 PM">ម៉ោង ០៣:០០ រសៀល</b><span data-en="Sen Krong Peali (spirit offering) ceremony">ពិធីសែនក្រុងពាលី</span></div>
-<div class="r"><b data-en="4:00 PM">ម៉ោង ០៤:០០ រសៀល</b><span data-en="Buddhist chanting of the Paritta">ពិធីសូត្រមន្តចម្រើនព្រះបរិត្ត</span></div>
-<div class="r"><b data-en="5:00 PM">ម៉ោង ០៥:០០ ល្ងាច</b><span data-en="Chum Pela and Dav Khan Sla ceremony">ពិធីជុំពេលា និងដាវខាន់ស្លា</span></div>
-<div class="r"><b data-en="6:30 PM">ម៉ោង ០៦:៣០ ល្ងាច</b><span data-en="Honored guests are invited to dinner">អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលល្ងាច</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2c2 2.2 2 4.2 0 6.2-2-2-2-4 0-6.2Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 9 22 20H10Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M4 21h24c0 2.5-2.2 4-5 4H9c-2.8 0-5-1.5-5-4Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M12 25h8l2 5H10Z"/><path d="M12 16h8M13.5 12.5h5" stroke="#f3f1ec" stroke-width=".9" fill="none"/></svg></i><b data-en="3:00 PM">ម៉ោង ០៣:០០ រសៀល</b><span data-en="Sen Krong Peali (spirit offering) ceremony">ពិធីសែនក្រុងពាលី</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 4C19.5 8.5 19.5 14 16 20 12.5 14 12.5 8.5 16 4Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 20C12 19 8 15 7 9 11 10 14.5 13.5 16 20Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" transform="matrix(-1 0 0 1 32 0)" d="M16 20C12 19 8 15 7 9 11 10 14.5 13.5 16 20Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 20C10 21 5 18 2.5 13.5 7 12.5 12.5 14.5 16 20Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" transform="matrix(-1 0 0 1 32 0)" d="M16 20C10 21 5 18 2.5 13.5 7 12.5 12.5 14.5 16 20Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M3 23.5C9 29 23 29 29 23.5 23 25.8 9 25.8 3 23.5Z"/></svg></i><b data-en="4:00 PM">ម៉ោង ០៤:០០ រសៀល</b><span data-en="Buddhist chanting of the Paritta">ពិធីសូត្រមន្តចម្រើនព្រះបរិត្ត</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2C22 8.5 23.5 15 16 22 8.5 15 10 8.5 16 2Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M7.5 11C11.5 15 12 19.5 7.5 24 3 19.5 3.5 15 7.5 11Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" transform="matrix(-1 0 0 1 32 0)" d="M7.5 11C11.5 15 12 19.5 7.5 24 3 19.5 3.5 15 7.5 11Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M8 26.5h16l-2 3H10Z"/></svg></i><b data-en="5:00 PM">ម៉ោង ០៥:០០ ល្ងាច</b><span data-en="Chum Pela and Dav Khan Sla ceremony">ពិធីជុំពេលា និងដាវខាន់ស្លា</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2c1.8 2.4 1.8 4.6 0 7-1.8-2.4-1.8-4.6 0-7Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M6 21C6 14.5 10.5 10 16 10s10 4.5 10 11Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M4 21.5h24l-1.5 3h-21Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M12.5 25h7l2 5h-11Z"/></svg></i><b data-en="6:30 PM">ម៉ោង ០៦:៣០ ល្ងាច</b><span data-en="Honored guests are invited to dinner">អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលល្ងាច</span></div>
 <h3 data-en="Programme 2 · Sunday, 23 May 2027">កម្មវិធីទី២ ថ្ងៃអាទិត្យ ទី២៣ ខែឧសភា ឆ្នាំ២០២៧</h3>
-<div class="r"><b data-en="6:30 AM">ម៉ោង ០៦:៣០ ព្រឹក</b><span data-en="Guests gather to prepare the wedding procession">ជួបជុំភ្ញៀវកិត្តិយសដើម្បីរៀបចំហែជំនូន</span></div>
-<div class="r"><b data-en="7:00 AM">ម៉ោង ០៧:០០ ព្រឹក</b><span data-en="Wedding procession into the ceremony pavilion">ពិធីហែជំនូនកំណត់ចូលរោងជ័យ</span></div>
-<div class="r"><b data-en="7:30 AM">ម៉ោង ០៧:៣០ ព្រឹក</b><span data-en="Spokesman ceremony, offerings, presentation of fruits and breakfast">ពិធីចៅមហានិយាយជើងការ សែនព្រេន រៀបរាប់ផ្លែឈើនិងពិសាភោជនាហារពេលព្រឹក</span></div>
-<div class="r"><b data-en="8:00 AM">ម៉ោង ០៨:០០ ព្រឹក</b><span data-en="Ring exchange ceremony">ពិធីបំពាក់ចិញ្ចៀន</span></div>
-<div class="r"><b data-en="9:00 AM">ម៉ោង ០៩:០០ ព្រឹក</b><span data-en="Hair-cutting blessing ceremony for the groom and bride">ពិធីកាត់សក់បង្កក់សិរី កូនប្រុស-កូនស្រី</span></div>
-<div class="r"><b data-en="11:00 AM">ម៉ោង ១១:០០ ព្រឹក</b><span data-en="Sampeah Phteum: hand tying, candle circling and Preah Thong veil ceremony">ពិធីសំពះផ្ទឹមចងដៃ បង្វិលពពិល និងព្រះថោងតោងស្បៃ</span></div>
-<div class="r"><b data-en="12:00 PM">ម៉ោង ១២:០០ ថ្ងៃត្រង់</b><span data-en="Lunch for honored guests, concluding the wedding ceremony">អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់ បញ្ចប់កិច្ចអាពាហ៍ពិពាហ៍</span></div>
-<div class="r"><b data-en="4:00 PM">ម៉ោង ០៤:០០ ល្ងាច</b><span data-en="Honored guests are invited to dinner at the bride&#39;s home. Thank you!">អញ្ជើញភ្ញៀវកិត្តិយសពិសាភោជនាហារ នៅគេហដ្ឋានខាងស្រី ដោយមេត្រីភាព ។ សូមអរគុណ !</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2C21 8 22.5 15 19.5 22L16 25 12.5 22C9.5 15 11 8 16 2Z"/><path d="M16 8v14" stroke="#f3f1ec" stroke-width=".9" fill="none"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M8 25 12.5 22l3.5 3 3.5-3 4.5 3-3 4.5H11Z"/></svg></i><b data-en="6:30 AM">ម៉ោង ០៦:៣០ ព្រឹក</b><span data-en="Guests gather to prepare the wedding procession">ជួបជុំភ្ញៀវកិត្តិយសដើម្បីរៀបចំហែជំនូន</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2 22 9.5H10Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 8 24.5 17h-17Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 14.5 28 23.5H4Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M6 23.5h20V30H6Z"/><path d="M12 30v-4.5a4 4 0 0 1 8 0V30" fill="#f3f1ec"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M2.5 24.5c1.5-.2 2.6-.7 3.3-1.4l.8 1.4Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M29.5 24.5c-1.5-.2-2.6-.7-3.3-1.4l-.8 1.4Z"/></svg></i><b data-en="7:00 AM">ម៉ោង ០៧:០០ ព្រឹក</b><span data-en="Wedding procession into the ceremony pavilion">ពិធីហែជំនូនកំណត់ចូលរោងជ័យ</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 29C5 21.5 3.5 11 10.5 7.5 13 6.3 15.2 7.2 16 9.5 16.8 7.2 19 6.3 21.5 7.5 28.5 11 27 21.5 16 29Z"/><path d="M16 26V12M16 21l-5.5-5M16 21l5.5-5" stroke="#f3f1ec" stroke-width=".9" fill="none" stroke-linecap="round"/></svg></i><b data-en="7:30 AM">ម៉ោង ០៧:៣០ ព្រឹក</b><span data-en="Spokesman ceremony, offerings, presentation of fruits and breakfast">ពិធីចៅមហានិយាយជើងការ សែនព្រេន រៀបរាប់ផ្លែឈើនិងពិសាភោជនាហារពេលព្រឹក</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11.5" cy="21" r="6" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/><circle cx="20.5" cy="21" r="6" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2.5 20.5 7 16 12.5 11.5 7Z"/><path d="M11.5 7h9M16 2.5v10" stroke="#f3f1ec" stroke-width=".7" fill="none"/></svg></i><b data-en="8:00 AM">ម៉ោង ០៨:០០ ព្រឹក</b><span data-en="Ring exchange ceremony">ពិធីបំពាក់ចិញ្ចៀន</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="8.5" cy="24" r="4" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/><circle cx="23.5" cy="24" r="4" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/><path d="M11 20.5 25 3M21 20.5 7 3" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg></i><b data-en="9:00 AM">ម៉ោង ០៩:០០ ព្រឹក</b><span data-en="Hair-cutting blessing ceremony for the groom and bride">ពិធីកាត់សក់បង្កក់សិរី កូនប្រុស-កូនស្រី</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="23" rx="13" ry="4.2" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="1.2 3.6"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2c3.6 3.6 3.6 7.2 0 10.4-3.6-3.2-3.6-6.8 0-10.4Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M12.5 14h7v13h-7Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M10 27h12v2.5H10Z"/></svg></i><b data-en="11:00 AM">ម៉ោង ១១:០០ ព្រឹក</b><span data-en="Sampeah Phteum: hand tying, candle circling and Preah Thong veil ceremony">ពិធីសំពះផ្ទឹមចងដៃ បង្វិលពពិល និងព្រះថោងតោងស្បៃ</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M4 15h24c0 6.5-5 11-12 11S4 21.5 4 15Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M12 26h8l1.5 4h-11Z"/><path d="M10.5 11c-2-2 2-3.5 0-7M16 11c-2-2 2-3.5 0-7M21.5 11c-2-2 2-3.5 0-7" fill="none" stroke="url(#gld)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></i><b data-en="12:00 PM">ម៉ោង ១២:០០ ថ្ងៃត្រង់</b><span data-en="Lunch for honored guests, concluding the wedding ceremony">អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់ បញ្ចប់កិច្ចអាពាហ៍ពិពាហ៍</span></div>
+<div class="r m"><i class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M16 2.5 30 14H2Z"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M5 14h22v9H5Z"/><path d="M13 23v-6a3 3 0 0 1 6 0v6" fill="#f3f1ec"/><path fill="url(#gld)" stroke="#f3f1ec" stroke-width=".9" stroke-linejoin="round" d="M5.5 23h2.2v7H5.5ZM24.3 23h2.2v7h-2.2ZM14.9 23h2.2v7h-2.2Z"/><path d="M3 14.8 1.5 17M29 14.8l1.5 2.2" stroke="url(#gld)" stroke-width="1.6" stroke-linecap="round"/></svg></i><b data-en="4:00 PM">ម៉ោង ០៤:០០ ល្ងាច</b><span data-en="Honored guests are invited to dinner at the bride&#39;s home. Thank you!">អញ្ជើញភ្ញៀវកិត្តិយសពិសាភោជនាហារ នៅគេហដ្ឋានខាងស្រី ដោយមេត្រីភាព ។ សូមអរគុណ !</span></div>
 </div></div></section>
 <section class="sec d"><div class="in"><h2 class="kh foil" data-en="Photo Gallery">កម្រងរូបភាព</h2><div class="mas" id="mas"></div><div class="gnav"><button type="button" id="gprev" aria-label="Previous">‹</button><div class="gdots" id="gdots"></div><button type="button" id="gnext" aria-label="Next">›</button></div><div class="gsw kh" data-en="Swipe to see more">អូសទៅឆ្វេងដើម្បីមើលបន្ថែម</div></div></section>
 <section class="sec l"><div class="in"><h2 class="kh" style="color:#0b2850" data-en="Venue">ទីតាំង</h2><p class="kh" data-en="Cambodian People&#39;s Party Office<br>Sambuor Village, Dangkor Commune, Dangkor District, Phnom Penh">ទីស្នាក់ការគណបក្សប្រជាជនកម្ពុជា<br>ភូមិសំបួរ សង្កាត់ដង្កោ ខណ្ឌដង្កោ ភ្នំពេញ</p>
- <a class="btn" href="https://www.google.com/maps/search/?api=1&query=ទីស្នាក់ការគណបក្សប្រជាជនកម្ពុជា+ភូមិសំបួរ+ដង្កោ+ភ្នំពេញ" target="_blank" rel="noopener" data-en="Open Google Maps">បើក Google Maps</a>
+ <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=11.5065342,104.8914128&travelmode=driving" target="_blank" rel="noopener" data-en="Directions in Google Maps">បើកផ្លូវទៅកាន់ Google Maps</a>
  <a class="btn o" id="ics" download="wedding.ics" href="#" data-en="Save to calendar">រក្សាទុកក្នុងប្រតិទិន</a>
- <a class="vmap" href="https://www.google.com/maps/search/?api=1&query=ទីស្នាក់ការគណបក្សប្រជាជនកម្ពុជា+ភូមិសំបួរ+ដង្កោ+ភ្នំពេញ" target="_blank" rel="noopener" aria-label="បើក Google Maps"><svg viewBox="0 0 560 724" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ផែនទីទៅកាន់ទីតាំង · Map to the venue" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <a class="vmap" href="https://www.google.com/maps/dir/?api=1&destination=11.5065342,104.8914128&travelmode=driving" target="_blank" rel="noopener" aria-label="បើក Google Maps"><svg viewBox="0 0 560 724" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ផែនទីទៅកាន់ទីតាំង · Map to the venue" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <rect width="560" height="724" fill="#0c2b57"/>
 <rect x="9" y="9" width="542" height="706" rx="14" stroke="#e7c97a" stroke-opacity=".55" stroke-width="1"/>
 <text x="280" y="38" text-anchor="middle" fill="#e7c97a" style="font-family:'Kantumruy Pro','Noto Sans Khmer',sans-serif;font-size:14px;font-weight:600" class="kmt">ផែនទីទៅកាន់ទីតាំង</text>
@@ -368,6 +417,19 @@ html[lang=km] .gsw{letter-spacing:0;text-transform:none;font-size:13px}
 <g transform="translate(512 92)"><circle r="15" stroke="#efe6cf" stroke-opacity=".6" stroke-width="1"/><path d="M0 -10 L5 6 L0 3 L-5 6 Z" fill="#efe6cf" stroke="none"/><text y="-19" text-anchor="middle" fill="#efe6cf" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:11px;font-style:normal">N</text></g>
 <text x="280" y="708" text-anchor="middle" fill="#cdbf9b" fill-opacity=".7" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:9px;letter-spacing:.2em">NOT TO SCALE</text>
 </svg></a></div></section>
+<section class="sec d" id="wishes"><div class="in wish"><h2 class="kh foil" data-en="Wishes">ពាក្យជូនពរ</h2>
+ <p class="sub kh" data-en="Leave a warm wish for the couple">សូមផ្ញើពាក្យជូនពរដល់កូនកំលោះ និងកូនក្រមុំ</p>
+ <form class="wf" id="wf" autocomplete="off" novalidate>
+  <div><label class="kh" for="wname" data-en="Your name">ឈ្មោះរបស់អ្នក</label><input id="wname" name="name" maxlength="40" required data-ph-km="ឈ្មោះរបស់អ្នក" data-ph-en="Your name"></div>
+  <div><label class="kh" for="wtext" data-en="Your wish">ពាក្យជូនពររបស់អ្នក</label><textarea id="wtext" name="wish" maxlength="300" required data-ph-km="សរសេរពាក្យជូនពរនៅទីនេះ..." data-ph-en="Write your wish here..."></textarea>
+  <div class="row"><span class="wmsg kh" id="wmsg" role="status" aria-live="polite"></span><span class="cnt" id="wcnt">0/300</span></div></div>
+  <input class="hp" id="whp" name="website" tabindex="-1" aria-hidden="true" autocomplete="off">
+  <button class="btn kh" id="wsend" type="submit" data-en="Send wish">ផ្ញើពាក្យជូនពរ</button>
+ </form>
+ <div class="wlist" id="wlist" aria-live="polite"></div>
+ <button class="btn o wmore kh" id="wmore" type="button" hidden data-en="Show more">មើលបន្ថែម</button>
+</div></section>
+<section class="sec l" id="letters"><div class="in"><h2 class="kh" style="color:#0b2850" data-en="Letters from the Families">លិខិតពីគ្រួសារយើងខ្ញុំ</h2><div class="lt-tabs kh" role="tablist"><button type="button" role="tab" aria-selected="true" data-lt="lt1" data-en="Letter of Thanks">លិខិតថ្លែងអំណរគុណ</button><button type="button" role="tab" aria-selected="false" data-lt="lt2" data-en="Letter of Apology">លិខិតសូមអភ័យទោស</button></div><article class="lt on" id="lt1" role="tabpanel"><h3 class="kh" data-en="Letter of Thanks">លិខិតថ្លែងអំណរគុណ</h3><p class="to" data-en="To our esteemed honored guests">ជូនចំពោះ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ជាភ្ញៀវកិត្តិយសជាទីគោរព</p><p data-en="Following the wedding of our son Srieng Kim Horng and our daughter Siv Srey Mom on Sunday, 23 May 2027, both our families wish to express our deepest gratitude for your presence as presiding and honored guests. Your attendance, your warm wishes and your generous gifts made our celebration full of joy and blessings.">ក្រោយពីបានបញ្ចប់ពិធីអាពាហ៍ពិពាហ៍កូនប្រុស ស្រៀង គីមហ័ង និងកូនស្រី ស៊ីវ ស្រីមុំ នៅថ្ងៃអាទិត្យ ទី២៣ ខែឧសភា ឆ្នាំ២០២៧ យើងខ្ញុំទាំងសងខាងគ្រួសារ សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅបំផុត ចំពោះការអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយសរបស់ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា។ ការមកចូលរួម ពាក្យជូនពរ និងអំណោយដ៏ថ្លៃថ្លា បានធ្វើឲ្យពិធីរបស់យើងខ្ញុំប្រកបដោយសេចក្តីរីករាយ និងសិរីមង្គលពេញលេញ។</p><p data-en="We pray that the virtue of the Triple Gem and the guardian spirits repay you and your family with good health, strength, happiness, progress in all your endeavors, and lasting blessings always.">យើងខ្ញុំសូមឧទ្ទិសបួងសួងដល់គុណបុណ្យព្រះរតនត្រ័យ និងអស់ទេវតាឆ្នាំងរក្សាផែនដី សូមតបស្នងដល់ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ព្រមទាំងក្រុមគ្រួសារ ឲ្យបានប្រកបដោយសុខភាពល្អ កម្លាំងមាំមួន មានសេចក្តីសុខ ចម្រើនក្នុងគ្រប់កិច្ចការ និងជួបតែសេចក្តីសុខសិរីមង្គលគ្រប់ភារកិច្ចជារៀងរហូតតទៅ។</p><p class="sg" data-en="With respect and gratitude<br>The families of Mr. Srieng Yeang &amp; Mrs. So Mealy<br>and Mr. Siv San &amp; Mrs. Chan Ny<br>Groom Srieng Kim Horng &amp; Bride Siv Srey Mom<br>Phnom Penh, 23 May 2027">ដោយក្តីគោរព និងដឹងគុណ<br>គ្រួសារ ស្រៀង យៀង និង សូ ម៉ាលី<br>គ្រួសារ ស៊ីវ សាន់ និង ចាន់ នី<br>កូនកំលោះ ស្រៀង គីមហ័ង និង កូនក្រមុំ ស៊ីវ ស្រីមុំ<br>ភ្នំពេញ ថ្ងៃទី២៣ ខែឧសភា ឆ្នាំ២០២៧</p></article><article class="lt" id="lt2" role="tabpanel"><h3 class="kh" data-en="Letter of Apology">លិខិតសូមអភ័យទោស</h3><p class="to" data-en="To our esteemed honored guests">ជូនចំពោះ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ជាភ្ញៀវកិត្តិយសជាទីគោរព</p><p data-en="At the recent wedding of our son Srieng Kim Horng and our daughter Siv Srey Mom, we did our best to welcome our honored guests as well as we could. However, due to the busy occasion and limited resources, there may have been shortcomings in our welcome, seating, food, drinks or other services that did not fully meet your expectations.">ក្នុងពិធីអាពាហ៍ពិពាហ៍កូនប្រុស ស្រៀង គីមហ័ង និងកូនស្រី ស៊ីវ ស្រីមុំ កន្លងទៅនេះ យើងខ្ញុំបានខិតខំរៀបចំទទួលភ្ញៀវកិត្តិយសឲ្យបានល្អបំផុតតាមលទ្ធភាព។ ប៉ុន្តែដោយសារភាពមមាញឹក និងកង្វះខាតខ្លះៗ ប្រហែលជាមានការខ្វះចន្លោះក្នុងការទទួលស្វាគមន៍ ការចាត់ចែងកន្លែងអង្គុយ អាហារ ភេសជ្ជៈ ឬការបម្រើសេវាផ្សេងៗ ដែលមិនបានគ្រប់គ្រាន់ ឬមិនបានទាន់ចិត្តឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា។</p><p data-en="We sincerely apologize for any mistakes or shortcomings, with all our respect. We hope you will kindly forgive us and understand our limitations. Thank you for giving us your valuable time to celebrate with us.">យើងខ្ញុំសូមអភ័យទោសយ៉ាងជ្រាលជ្រៅចំពោះរាល់កំហុសឆ្គង និងការខកខានទាំងឡាយនោះ ដោយក្តីគោរពរាប់អាន។ យើងខ្ញុំសង្ឃឹមថា ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា នឹងមេត្តាអភ័យទោស និងយល់ដល់ភាពមិនគ្រប់គ្រាន់របស់យើងខ្ញុំ។ សូមអរគុណដែលបានចំណាយពេលដ៏មានតម្លៃមកចូលរួមជាមួយយើងខ្ញុំ។</p><p class="sg" data-en="With respect and gratitude<br>The families of Mr. Srieng Yeang &amp; Mrs. So Mealy<br>and Mr. Siv San &amp; Mrs. Chan Ny<br>Phnom Penh, 23 May 2027">ដោយក្តីគោរព និងដឹងគុណ<br>គ្រួសារ ស្រៀង យៀង និង សូ ម៉ាលី<br>គ្រួសារ ស៊ីវ សាន់ និង ចាន់ នី<br>ភ្នំពេញ ថ្ងៃទី២៣ ខែឧសភា ឆ្នាំ២០២៧</p></article></div></section>
 <section class="sec d"><div class="in"><h2 class="kh foil" style="font-size:clamp(26px,8vw,42px)" data-en="Thank You">សូមអរគុណ</h2>
  <div class="logo" style="justify-content:center;margin:.5em auto"><span class="g kh foil" data-en="Kim Horng">គីមហ័ង</span><span class="b kh foil" data-en="Srey Mom">ស្រីមុំ</span><span class="amp t" aria-hidden="true"><svg viewBox="0 0 24 22" width="1em" height="1em" style="display:block"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9c7124"/><stop offset=".35" stop-color="#e7c97a"/><stop offset=".5" stop-color="#fff3cf"/><stop offset=".65" stop-color="#d9b15a"/><stop offset="1" stop-color="#9c7124"/></linearGradient></defs><path fill="url(#hg)" d="M12 21.2C5 15.4 1 11.9 1 7.3 1 4 3.5 1.5 6.7 1.5c2 0 3.9 1 5.3 2.9C13.4 2.5 15.3 1.5 17.3 1.5 20.5 1.5 23 4 23 7.3c0 4.600-4 8.100-11 13.900z"/></svg></span></div>
  <div id="sh"><a class="btn o" id="tg" target="_blank" rel="noopener" data-en="Share via Telegram">ផ្ញើតាម Telegram</a><a class="btn o" id="fb" target="_blank" rel="noopener" data-en="Share via Facebook">ផ្ញើតាម Facebook</a><a class="btn o" id="ms" href="#" data-en="Share via Messenger">ផ្ញើតាម Messenger</a><button class="btn o" id="cp" data-en="Copy link">ចម្លងតំណភ្ជាប់</button></div>
@@ -827,5 +889,77 @@ addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx;if(Math
 addEventListener('pointerup',()=>{if(!down)return;down=false;if(moved){mas.classList.remove('drag');nearest();go(cur)}});
 mas.addEventListener('click',e=>{if(moved){e.stopImmediatePropagation();e.preventDefault();moved=false}},true);
 })();
+</script>
+<script>
+/* ===== Guest wishes =====
+   WISH_API : URL of a Google Apps Script web app (see wishes-apps-script.gs) so every guest sees every wish.
+   Leave '' to keep wishes only on the device that wrote them. */
+const WISH_API='';
+(function(){
+const $=s=>document.querySelector(s);
+const form=$('#wf');if(!form)return;
+const list=$('#wlist'),msg=$('#wmsg'),more=$('#wmore'),send=$('#wsend'),nm=$('#wname'),tx=$('#wtext'),cnt=$('#wcnt');
+const KEY='inv-wishes',PAGE=10;
+const L=()=>window.LANG==='en'?'en':'km';
+const T={km:{ok:'អរគុណ! ពាក្យជូនពររបស់អ្នកត្រូវបានផ្ញើ ♡',need:'សូមបំពេញឈ្មោះ និងពាក្យជូនពរ',wait:'សូមរង់ចាំបន្តិចសិន',fail:'ផ្ញើមិនបានទេ សូមព្យាយាមម្តងទៀត',empty:'មិនទាន់មានពាក្យជូនពរទេ សូមធ្វើជាអ្នកដំបូង ♡',busy:'កំពុងផ្ញើ...',send:'ផ្ញើពាក្យជូនពរ'},
+         en:{ok:'Thank you! Your wish has been sent ♡',need:'Please enter your name and a wish',wait:'Please wait a moment',fail:'Could not send. Please try again.',empty:'No wishes yet. Be the first ♡',busy:'Sending...',send:'Send wish'}};
+const KD=n=>L()==='en'?String(n):String(n).replace(/\d/g,d=>'០១២៣៤៥៦៧៨៩'[d]);
+let wishes=[],shown=PAGE,last=0;
+const store={get(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return[]}},set(a){try{localStorage.setItem(KEY,JSON.stringify(a.slice(-50)))}catch(e){}}};
+const clean=s=>String(s||'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').trim();
+const fmt=ts=>{const d=new Date(ts);if(isNaN(d))return'';const s=d.toLocaleDateString(L()==='en'?'en-GB':'km-KH',{day:'numeric',month:'short',year:'numeric'});return L()==='en'?s:KD(s)};
+function render(){
+  list.textContent='';
+  if(!wishes.length){const p=document.createElement('p');p.className='wempty kh';p.textContent=T[L()].empty;list.appendChild(p)}
+  wishes.slice(0,shown).forEach(w=>{
+    const c=document.createElement('div'),a=document.createElement('div'),b=document.createElement('div'),d=document.createElement('div');
+    c.className='wi';a.className='wn kh foil';b.className='wt kh';d.className='wd';
+    a.textContent=w.n;b.textContent=w.t;d.textContent=fmt(w.ts);
+    c.append(a,b,d);list.appendChild(c);
+  });
+  more.hidden=wishes.length<=shown;
+}
+function merge(remote,local){
+  const seen=new Set(),out=[];
+  [...remote,...local].forEach(w=>{if(!w||!w.t)return;const k=w.id||(w.n+'|'+w.t+'|'+w.ts);if(seen.has(k))return;seen.add(k);out.push({id:w.id,n:clean(w.n).slice(0,40)||'—',t:clean(w.t).slice(0,300),ts:+w.ts||Date.now()})});
+  return out.sort((x,y)=>y.ts-x.ts);
+}
+async function load(){
+  let remote=[];
+  if(WISH_API){try{const r=await fetch(WISH_API,{cache:'no-store'});const j=await r.json();remote=Array.isArray(j)?j:(j.wishes||[])}catch(e){}}
+  wishes=merge(remote,store.get());render();
+}
+function setMsg(t,err){msg.textContent=t||'';msg.classList.toggle('err',!!err)}
+tx.addEventListener('input',()=>{cnt.textContent=tx.value.length+'/300'});
+more.addEventListener('click',()=>{shown+=PAGE;render()});
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  if($('#whp').value)return;
+  const n=clean(nm.value).slice(0,40),t=clean(tx.value).slice(0,300);
+  if(!n||!t){setMsg(T[L()].need,true);return}
+  if(Date.now()-last<8000){setMsg(T[L()].wait,true);return}
+  last=Date.now();send.disabled=true;send.textContent=T[L()].busy;setMsg('');
+  const w={id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),n,t,ts:Date.now()};
+  let ok=true;
+  if(WISH_API){try{await fetch(WISH_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(w)})}catch(err){ok=false}}
+  if(ok){const a=store.get();a.push(w);store.set(a);wishes=merge(wishes,[w]);render();tx.value='';cnt.textContent='0/300';setMsg(T[L()].ok);
+    const el=list.firstElementChild;if(el&&el.scrollIntoView)el.scrollIntoView({block:'nearest',behavior:'smooth'})}
+  else setMsg(T[L()].fail,true);
+  send.disabled=false;send.textContent=T[L()].send;
+});
+function lang(){
+  setMsg('');
+  document.querySelectorAll('[data-ph-km]').forEach(i=>i.placeholder=i.dataset[L()==='en'?'phEn':'phKm']);
+  if(!send.disabled)send.textContent=T[L()].send;
+  render();
+}
+new MutationObserver(lang).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+lang();load();
+})();
+</script>
+<script>
+(function(){const tabs=[...document.querySelectorAll('.lt-tabs button')];
+tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.setAttribute('aria-selected',x===b));
+document.querySelectorAll('.lt').forEach(l=>l.classList.toggle('on',l.id===b.dataset.lt))}))})();
 </script>
 </body></html>
